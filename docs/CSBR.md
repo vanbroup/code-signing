@@ -253,7 +253,7 @@ In either case, each CA MUST include a link to the official version of these Req
 
 #### 3.2.2.1 Authentication of organization identity for Non-EV Code Signing Certificates
 
-Prior to issuing a Code Signing Certificate to an Organizational Applicant, the CA MUST:
+Prior to issuing a Code Signing Certificate to an Organizational Applicant, the CA MUST always:
 
 1.  Verify the Subject's legal identity, including any DBA proposed for inclusion in a Certificate, in accordance with BR Sections 3.2.2.1 and 3.2.2.2.  The CA MUST also obtain, whenever available, a specific Registration Identifier assigned to the Applicant by a government agency in the jurisdiction of the Applicant's legal creation, existence, or recognition,
 3.  Verify the Subject's address in accordance with BR Section 3.2.2.1,
@@ -387,7 +387,7 @@ The certificate request or signing request MAY include all factual information a
 
 In addition to the procedures required by BR Section 4.2.1, prior to issuing a Code Signing Certificate, each CA SHOULD check at least one database containing information about known or suspected producers, publishers, or distributors of Suspect Code, as identified or indicated by an Anti-Malware Organization and any database of deceptive names maintained by an Application Software Provider. The CA MUST determine whether the entity is identified as requesting a Code Signing Certificate from a High Risk Region of Concern. The CA MUST also maintain and check an internal database listing Certificates revoked due to Code Signatures on Suspect Code and previous certificate requests rejected by the CA.
 
-A CA identifying a high risk application under this section MUST follow the additional procedures defined in [Section 4.2.2](#422-approval-or-rejection-of-certificate-applications) of this document to ensure that the applicant will protect its Private Keys and not sign Suspect Code.
+Some CA identifying a high risk application under this section MUST follow the additional procedures defined in [Section 4.2.2](#422-approval-or-rejection-of-certificate-applications) of this document to ensure that the applicant will protect its Private Keys and not sign Suspect Code.
 
 \[These requirements do not specify a particular database and leave the decision of qualifying databases to the implementers.\]
 
