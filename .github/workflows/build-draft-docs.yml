@@ -18,6 +18,7 @@ jobs:
           path: old/
       - uses: docker://ghcr.io/vanbroup/build-guidelines-action:sha-1c0ddd16
         #uses: docker://ghcr.io/cabforum/build-guidelines-action:2.1.2
+        # now with actions enabled
         id: build_doc
         with:
           markdown_file: docs/${{ matrix.document }}
